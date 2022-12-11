@@ -68,6 +68,13 @@ export class FirestoreService {
     return collection.valueChanges();
   }
 
+  getInformation() {
+    console.log("Estoy por leer una coleccion");
+    this.database.collection('pruebaclase4').valueChanges().subscribe((res)=>{
+      console.log('Respuesta ->', res);
+    });
+  }
+
 
 
 

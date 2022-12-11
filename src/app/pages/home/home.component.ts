@@ -40,4 +40,9 @@ export class HomeComponent implements OnInit {
       this.notificationsService.newNotication();
   }
 
+  getinformation() {
+    
+    this.firestoreService.getInformation();
+  }
+
 }
